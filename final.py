@@ -6,7 +6,7 @@ while True:
         theme = input('Введите основную тему книги: ')
         characters = input('Кто основные персонажи? ')
         recommendations = input('Вы порекомендавали бы данную книгу для чтения? ')
-        title2 = [theme, characters, recommendations]
+        title2 = ["Тема книги:", theme, "Основные персонажи:", characters, "Рекомендации для чтения:", recommendations]
         break
     elif user_input.lower() == 'нет':
         title2 = []
@@ -15,7 +15,8 @@ while True:
         print('Неверный тип ответа')
 content = input('Текст заметки: ')
 status = input('Статус заметки: ')
-created_date = input('Дата создания заметки в формате ДД.ММ.ГГГГ: ')
-issue_date = input('Дата истечения заметки в формате ДД.ММ.ГГГГ: ')
-note = [username, content, status, created_date[0:5], issue_date[0:5], [title1, title2]]
+created_date = input('Дата создания заметки в формате ДД-ММ-ГГГГ: ')
+issue_date = input('Дата истечения заметки в формате ДД-ММ-ГГГГ: ')
+note = ["Имя пользователя:", username, "Текст заметки:", content, "Статус заметки:", status,
+        "Дата создания заметки:", created_date[0:5], "Дата истечения заметки:", issue_date[0:5], [title1, title2]]
 print (note)
